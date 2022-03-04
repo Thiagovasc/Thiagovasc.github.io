@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --fullwhite: #ffffff;
+    --fullblack: #000000;
+}
+
+header .container {
+    background-color: var(--fullblack);
+    display: flex; 
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header .logo {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+header nav a {
+    padding: 2px;
+    text-decoration: none;
+    color: white;
+    margin-right: 1rem;
+}
