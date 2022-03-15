@@ -1,0 +1,10 @@
+@media (max-width: 700px) {
+    .menu-mobile {
+        visibility: visible;
+        display: flex;
+        justify-content: flex-end;
+    }
+    #nav-list {
+        visibility: hidden;
+    }
+}

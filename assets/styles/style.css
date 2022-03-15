@@ -1,32 +1,58 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500&display=swap');
+
+
+:root {
+    --fonte: 'Fredoka', sans-serif;
+
+    /*Pallete monochromatic*/
+    --color1: #2E286B;
+    --color2: #A79FED;
+    --color3: #6657EB;
+    --color4: #4B486B;
+    --color5: #4F44B8;
+}
+
 
 * {
     padding: 0;
     margin: 0;
 }
 
-:root {
-    --fullwhite: #ffffff;
-    --fullblack: #000000;
+body {
+    font-family: var(--fonte);
+    background-color: var(--color1);
+
 }
 
-header .container {
-    background-color: var(--fullblack);
+
+.header-container {
+    box-sizing: border-box;
+    background-color: var(--color5);
     display: flex; 
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
+    padding: 2rem 2rem;
 }
 
-header .logo {
+
+#nav-list {
+    list-style: none;
     display: flex;
-    justify-content: flex-start;
-
+    flex-direction: row;
+    gap: 1rem;
 }
 
-header nav a {
-    padding: 2px;
+#nav-list a {
+    display: block;
     text-decoration: none;
-    color: white;
-    margin-right: 1rem;
+    color: #ffffff;
+    padding: .4rem;
+}
+
+#nav-menu a:hover {
+    color: #2E286B;
+    transition: .3s;
+    cursor: pointer;
 }
